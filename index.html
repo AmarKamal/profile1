@@ -8,65 +8,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Enhanced Navigation -->
-    <nav class="navbar">
-        <div class="nav-content">
-            <a href="#intro" class="logo">
-                <i class="ri-code-line"></i>
-                <span>Amar Kamal</span>
-            </a>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <i class="ri-menu-line"></i>
-            </button>
+    <div class="scroll-progress"></div>
+    <div id="main">
+        <nav id="nav">
             <div class="nav-links">
-                <a href="#intro" class="nav-link active">Home</a>
+                <a href="#intro" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#experience" class="nav-link">Experience</a>
                 <a href="#projects" class="nav-link">Projects</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Intro Section -->
-    <section id="intro">
-        <div class="intro-content">
-            <h1 class="animated-text">Amar Bin<br>Mohd Kamal</h1>
-            <div id="place">
-                <h3><i class="ri-map-pin-line"></i> Sungai Nibong Sekinchan, Selangor</h3>
-                <h4><i class="ri-code-line"></i> Software Engineer</h4>
+        <section id="intro">
+            <div class="intro-content">
+                <h1>Amar Bin<br>Mohd Kamal</h1>
+                <div id="place">
+                    <h3><i class="ri-map-pin-line"></i> Sungai Nibong Sekinchan, Selangor</h3>
+                    <h4>
+                        <i class="ri-code-line"></i>
+                        Software Engineer
+                    </h4>
+                </div>
+                <div class="scroll-indicator">
+                    <p>Scroll to explore</p>
+                    <i class="ri-arrow-down-line"></i>
+                </div>
             </div>
-            <div class="scroll-indicator">
-                <p>Scroll to explore</p>
-                <i class="ri-arrow-down-line bounce"></i>
-            </div>
-        </div>
-        <div class="background-animation"></div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <div class="about-container">
-            <h2 class="highlight-text">"Dedicated software engineer passionate about building scalable applications and integrating AI features."</h2>
+        <section id="about">
+            <h2>"Dedicated software engineer passionate about building scalable applications and integrating AI features."</h2>
             <div id="about-part2">
                 <h3>About Me</h3>
                 <p>A computer science graduate with expertise in Frontend Development, AI integration, and mobile applications. Committed to creating innovative solutions that make a difference.</p>
                 <div class="stats">
-                    <div class="stat-item" data-count="3">
-                        <span class="stat-number">0</span>
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
                         <span class="stat-label">Years Experience</span>
                     </div>
-                    <div class="stat-item" data-count="15">
-                        <span class="stat-number">0</span>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
                         <span class="stat-label">Projects</span>
                     </div>
-                    <div class="stat-item" data-count="10">
-                        <span class="stat-number">0</span>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
                         <span class="stat-label">Technologies</span>
                     </div>
                 </div>
-                <div id="icons" class="social-links">
+                <div id="icons">
                     <a href="mailto:amarkamal987@gmail.com" class="icon-link" data-tooltip="Email">
                         <i class="ri-mail-line"></i>
                     </a>
@@ -78,174 +69,162 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <div class="section-header">
-            <h3>Experience & Education</h3>
-        </div>
-        <div class="timeline">
-            <div class="experience-item reveal">
-                <div class="timeline-dot"></div>
-                <div class="content">
+        <section id="experience">
+            <div class="section-header">
+                <h3>Experience & Education</h3>
+            </div>
+            <div class="content">
+                <div class="experience-item loading">
+                    <div class="timeline-dot"></div>
                     <h4>Software Engineer</h4>
                     <p class="company">AMAST Sdn Bhd, Puchong Utama</p>
                     <p class="date">July 2024 - Present</p>
                     <p>Building applications using Flutter, Node.js, and integrating AI features with cross-functional teams.</p>
                 </div>
-            </div>
-            <div class="experience-item reveal">
-                <div class="timeline-dot"></div>
-                <div class="content">
+                <div class="experience-item loading">
+                    <div class="timeline-dot"></div>
                     <h4>Software Engineer Intern</h4>
                     <p class="company">AMAST Sdn Bhd, Puchong Utama</p>
                     <p class="date">April - June 2024</p>
                     <p>Developed responsive applications using Flutter & Dart with MVC architecture.</p>
                 </div>
-            </div>
-            <div class="education-item reveal">
-                <div class="timeline-dot"></div>
-                <div class="content">
+                <div class="education-item loading">
+                    <div class="timeline-dot"></div>
                     <h4>Bachelor of Computer Science (Hons)</h4>
                     <p class="school">UITM Shah Alam - CGPA 3.33</p>
                     <p class="date">2022 - 2024</p>
                 </div>
-            </div>
-            <div class="education-item reveal">
-                <div class="timeline-dot"></div>
-                <div class="content">
+                <div class="education-item loading">
+                    <div class="timeline-dot"></div>
                     <h4>Diploma in Computer Science</h4>
                     <p class="school">UITM Perlis - CGPA 3.75</p>
                     <p class="date">2019 - 2022</p>
                     <p class="achievement">🏆 Recipient of Anugerah Naib Canselor</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="section-header">
-            <h3>Featured Projects</h3>
-        </div>
-        <div class="projects-grid">
-            <div class="project-card reveal">
-                <div class="project-content">
-                    <div class="project-icon">
-                        <i class="ri-leaf-line"></i>
+        <section id="projects">
+            <div class="section-header">
+                <h3>Featured Projects</h3>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card loading">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="ri-leaf-line"></i>
+                        </div>
+                        <h4>Smart Tani</h4>
+                        <p class="project-type">Mobile Application</p>
+                        <p>Image Classification for Corn Leaf Health System using Android Studio, TensorFlow and MobileNetV2</p>
+                        <div class="tech-stack">
+                            <span>Android Studio</span>
+                            <span>TensorFlow</span>
+                            <span>MobileNetV2</span>
+                        </div>
                     </div>
-                    <h4>Smart Tani</h4>
-                    <p class="project-type">Mobile Application</p>
-                    <p>Image Classification for Corn Leaf Health System using Android Studio, TensorFlow and MobileNetV2</p>
-                    <div class="tech-stack">
-                        <span>Android Studio</span>
+                </div>
+                
+                <div class="project-card loading">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="ri-bar-chart-line"></i>
+                        </div>
+                        <h4>Malaysian Property Price Dashboard</h4>
+                        <p class="project-type">Data Analytics</p>
+                        <p>Interactive dashboard visualizing property prices across Malaysia using Power BI and Kaggle Dataset</p>
+                        <div class="tech-stack">
+                            <span>Power BI</span>
+                            <span>Data Analysis</span>
+                            <span>Kaggle</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card loading">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="ri-hotel-line"></i>
+                        </div>
+                        <h4>SELRA Hotel Booking System</h4>
+                        <p class="project-type">Web Application</p>
+                        <p>Dynamic hotel booking system using MVC architecture, Java EE, and Oracle Database</p>
+                        <div class="tech-stack">
+                            <span>Java EE</span>
+                            <span>Oracle DB</span>
+                            <span>MVC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="section-header">
+                <h3>Technical Skills</h3>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category loading">
+                    <div class="skill-icon">
+                        <i class="ri-layout-line"></i>
+                    </div>
+                    <h4>Frontend</h4>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Flutter</span>
+                    </div>
+                </div>
+                <div class="skill-category loading">
+                    <div class="skill-icon">
+                        <i class="ri-server-line"></i>
+                    </div>
+                    <h4>Backend</h4>
+                    <div class="skills-list">
+                        <span>Node.js</span>
+                        <span>PHP</span>
+                        <span>Java</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="skill-category loading">
+                    <div class="skill-icon">
+                        <i class="ri-tools-line"></i>
+                    </div>
+                    <h4>Tools & Technologies</h4>
+                    <div class="skills-list">
+                        <span>Git</span>
+                        <span>PowerBI</span>
                         <span>TensorFlow</span>
-                        <span>MobileNetV2</span>
+                        <span>Postman</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="project-card reveal">
-                <div class="project-content">
-                    <div class="project-icon">
-                        <i class="ri-bar-chart-line"></i>
-                    </div>
-                    <h4>Malaysian Property Price Dashboard</h4>
-                    <p class="project-type">Data Analytics</p>
-                    <p>Interactive dashboard visualizing property prices across Malaysia using Power BI and Kaggle Dataset</p>
-                    <div class="tech-stack">
-                        <span>Power BI</span>
-                        <span>Data Analysis</span>
-                        <span>Kaggle</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-card reveal">
-                <div class="project-content">
-                    <div class="project-icon">
-                        <i class="ri-hotel-line"></i>
-                    </div>
-                    <h4>SELRA Hotel Booking System</h4>
-                    <p class="project-type">Web Application</p>
-                    <p>Dynamic hotel booking system using MVC architecture, Java EE, and Oracle Database</p>
-                    <div class="tech-stack">
-                        <span>Java EE</span>
-                        <span>Oracle DB</span>
-                        <span>MVC</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="section-header">
-            <h3>Technical Skills</h3>
-        </div>
-        <div class="skills-grid">
-            <div class="skill-category reveal">
-                <div class="skill-icon">
-                    <i class="ri-layout-line"></i>
-                </div>
-                <h4>Frontend</h4>
-                <div class="skills-list">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Flutter</span>
-                </div>
-            </div>
-            <div class="skill-category reveal">
-                <div class="skill-icon">
-                    <i class="ri-server-line"></i>
-                </div>
-                <h4>Backend</h4>
-                <div class="skills-list">
-                    <span>Node.js</span>
-                    <span>PHP</span>
-                    <span>Java</span>
-                    <span>PostgreSQL</span>
+        <footer id="contact">
+            <div class="contact-content">
+                <h3>Let's Connect</h3>
+                <div class="contact-info">
+                    <a href="mailto:amarkamal987@gmail.com" class="contact-item">
+                        <i class="ri-mail-line"></i>
+                        <span>amarkamal987@gmail.com</span>
+                    </a>
+                    <a href="tel:+60169872838" class="contact-item">
+                        <i class="ri-phone-line"></i>
+                        <span>+60169872838</span>
+                    </a>
+                    <div class="contact-item">
+                        <i class="ri-map-pin-line"></i>
+                        <span>Sungai Nibong Sekinchan, Selangor</span>
+                    </div>
                 </div>
             </div>
-            <div class="skill-category reveal">
-                <div class="skill-icon">
-                    <i class="ri-tools-line"></i>
-                </div>
-                <h4>Tools & Technologies</h4>
-                <div class="skills-list">
-                    <span>Git</span>
-                    <span>PowerBI</span>
-                    <span>TensorFlow</span>
-                    <span>Postman</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <footer id="contact">
-        <div class="contact-content">
-            <h3>Let's Connect</h3>
-            <div class="contact-info">
-                <a href="mailto:amarkamal987@gmail.com" class="contact-item">
-                    <i class="ri-mail-line"></i>
-                    <span>amarkamal987@gmail.com</span>
-                </a>
-                <a href="tel:+60169872838" class="contact-item">
-                    <i class="ri-phone-line"></i>
-                    <span>+60169872838</span>
-                </a>
-                <div class="contact-item">
-                    <i class="ri-map-pin-line"></i>
-                    <span>Sungai Nibong Sekinchan, Selangor</span>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
