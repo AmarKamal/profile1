@@ -16,6 +16,56 @@
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
+/* Update card backgrounds for dark mode */
+html[data-theme="dark"] .experience-item,
+html[data-theme="dark"] .education-item,
+html[data-theme="dark"] .project-card,
+html[data-theme="dark"] .skill-category {
+    background-color: var(--accent-color);
+    border-color: var(--border-color);
+}
+
+/* Update box shadows for dark mode */
+html[data-theme="dark"] .experience-item:hover,
+html[data-theme="dark"] .education-item:hover,
+html[data-theme="dark"] .project-card:hover,
+html[data-theme="dark"] .skill-category:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Update icon backgrounds for dark mode */
+html[data-theme="dark"] #icons i {
+    background-color: var(--accent-color);
+}
+
+/* Update tech stack and skills list spans */
+.tech-stack span,
+.skills-list span {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+}
+
+/* Update link colors for dark mode */
+html[data-theme="dark"] .contact-item {
+    color: var(--bg-color);
+}
+
+/* Remove conflicting styles */
+.experience-item, 
+.education-item, 
+.skill-category {
+    background-color: var(--bg-color); /* Changed from white to var(--bg-color) */
+}
+
+.project-card {
+    background-color: var(--bg-color); /* Changed from white to var(--bg-color) */
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
